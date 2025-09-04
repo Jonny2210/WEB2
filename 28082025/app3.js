@@ -5,7 +5,7 @@
      //este otro
 */ 
 
-/*
+
 let clave = prompt("ingresa la clave secreta");
 if( clave === "123456"){
     //clave => true
@@ -13,7 +13,7 @@ if( clave === "123456"){
 }
 
 console.log("Continua el flujo");
-*/
+
 
 /*
 let numero = parseInt(prompt("ingresa tu numero"));
