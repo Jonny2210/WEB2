@@ -19,3 +19,4 @@ let optUser = prompt(`
             console.log("Opcion no valida");
             break;
     }
+    

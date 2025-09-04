@@ -10,3 +10,4 @@ console.log(logico);
 var logico = true || true;
 console.log(logico);
 
+
