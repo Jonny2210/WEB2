@@ -64,4 +64,4 @@ function mostrarMenu(){
 }
 
 //iniciar programa
-mostrarMenu();
+mostrarMenu(); 
