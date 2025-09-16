@@ -29,4 +29,4 @@ if(bandera){
 }else{
     console.log("Adios "+nombre);
 
-}
+} 
