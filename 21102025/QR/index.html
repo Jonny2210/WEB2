@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        
+        input {
+            width: 300px;
+            padding: 5px;
+            margin-top: 3px;
+            border: 1px solid #999;
+        }
+        
+        button {
+            margin-top: 15px;
+            margin-right: 10px;
+            padding: 8px 15px;
+            background-color: #ddd;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #ccc;
+        }
+        
+        #qr-code {
+            margin-top: 20px;
+        }
+</style>
+
+<body>
+    <div>
+        <label for="">Nombre: </label>
+        <input type="text" id="input1" required maxlength="100" placeholder="Nombre">
+        
+        <label for="">Correo</label>
+        <input type="email" id="input2">
+        
+        <label for="">Seleciona la institucion</label>
+        <input type="text" id="input3" list="institucionLista" required>
+        <datalist id="institucionLista">
+            <option value="FES Aragon">Faculta de Estudios Superiores Aragon</option>
+            <option value="CCH">Colegio de Ciencias y Humanidades</option>
+            <option value="POLI">Politecnico</option>
+            <option value="UniTec">Universidad Tecnológica de México</option>
+        </datalist>
+        
+        <label for="">Dependencia: </label>
+        <input type="text" name="" id="input4">
+    </div>
+    
+    <div>
+        <button id="btnGenerar" onclick="generarQR()">Generar QR</button>
+        <button onclick="location.href='./index.html'">Generar un nuevo QR</button>
+    </div>
+    
+    <div id="qr-code">
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

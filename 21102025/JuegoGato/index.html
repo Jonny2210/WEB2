@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Gato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h3 {
+            margin-bottom: 15px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border: 2px solid #999;
+        }
+        
+        .celda {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #999;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: white;
+        }
+        
+        .celda:hover {
+            background-color: #eee;
+        }
+        
+        button {
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: #ddd;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td class="celda" data-index="0" width="50" height="50"></td>
+            <td class="celda" data-index="1" width="50" height="50"></td>
+            <td class="celda" data-index="2" width="50" height="50"></td>
+        </tr>
+        <tr>
+            <td class="celda" data-index="3" width="50" height="50"></td>
+            <td class="celda" data-index="4" width="50" height="50"></td>
+            <td class="celda" data-index="5" width="50" height="50"></td>
+        </tr>
+        <tr>
+            <td class="celda" data-index="6" width="50" height="50"></td>
+            <td class="celda" data-index="7" width="50" height="50"></td>
+            <td class="celda" data-index="8" width="50" height="50"></td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="reiniciar()">Reiniciar</button>
+    <script src="app.js"></script>
+</body>
+</html>
